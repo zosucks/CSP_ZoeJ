@@ -4,11 +4,11 @@
 // float x = pow(2,2);
 //float equation = 5*7;
 char name[] = "Zoe"
-int num = 12;
+float expression = 5*pow(7, 2)/4;
 // + - * /
 int main(void){
-    num = 4;
-printf("%s\n", num);
     printf("Hello world");
+    printf("%f", expression);
+    
     return 0;
 }
