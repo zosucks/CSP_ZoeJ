@@ -26,6 +26,14 @@ num7 *= 2**2
 num7 += 3**3
 num7 -= 2**5/4
 
+num8 = 22/2
+num8 -= 2*5
+num8 **= 2
+
+num9 = 6/6
+num10 = 4-num9 
+num11 = num10**2
 
 
-print(num, num1, num2, num3, num4, num5, num6, num7)
+print(num, num1, num2, num3, num4, num5, num6, num7, )
+print(num8+num11)
