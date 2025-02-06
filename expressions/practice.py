@@ -35,5 +35,5 @@ num10 = 4-num9
 num11 = num10**2
 
 
-print(num, num1, num2, num3, num4, num5, num6, num7, )
+print(num, num1, num2, num3, num4, num5, num6, num7)
 print(num8+num11)
