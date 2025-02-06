@@ -1,7 +1,7 @@
 // Zoe jimenez, first program C
 #include <stdio.h>
 
-char name[];
+char name[33];
 int age;
 
 

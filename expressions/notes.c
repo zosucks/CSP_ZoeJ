@@ -3,7 +3,7 @@
 #include <math.h>
 // float x = pow(2,2);
 //float equation = 5*7;
-char name[] = "Zoe"
+char name[] = "Zoe";
 float expression = 5*pow(7, 2)/4;
 // + - * /
 int main(void){
