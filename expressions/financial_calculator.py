@@ -13,31 +13,31 @@ groceries = float(input("What is your groceries cost?\n"))
 # ask what their transportation cost is (variable an input)
 transportation = float(input("What is your transportation?\n"))
 
-
-# calculate savings as 10% of income (income * .1) (a variable)
-savings = income*.1
+savings = income - rent - groceries - utilities - transportation
 # calculate spending as [income - savings - rent - groceries - utilities - transportation] (variable)
 spending = income - savings - rent - groceries - utilities - transportation
+# calculate savings as 10% of income (income * .1) (a variable)
+saving = income*.1
 # calculate percent income of rent (rent/income * 100) (variable)
-rent /= income*100 
+rents = (rent/income)*100 
 # calculate percent income of utilities (utilities/income * 100) (variable)
-utilities /= income*100
+utilitie = (utilities/income)*100
 # calculate percent income of groceries (groceries/income * 100) (variable)
-groceries /= income*100 
+grocerie = (groceries/income)*100 
 # calculate percent income of transportation (transportation/income * 100) (variable)
-transportation /= income*100 
+transportations = (transportation/income)*100 
 # calculate percent income of spending (spending/income * 100) (variable) {NOT NESSARY}
 spending /= income*100
 
 # your rent is $XX.XX which is XX% of your income. (print)
-print("Your rent is $", rent )
+print("Your rent is $", rent, "Which is", rents, "% of your income.\n" )
 # your utilites is $XX.XX which is XX% of your income. (print)
-
+print("Your utilities is $", utilities, ", Which is", utilitie, "% of your income.\n")
 # your groceries is $XX.XX which is XX% of your income. (print)
-
+print("Your groceries is", groceries, ",Which is", grocerie, "% of your income.\n")
 # your transportation is $XX.XX which is XX% of your income. (print)
-
-# your rent is $XX.XX which is XX% of your income. (print)
+print("Your transportation is",transportation, "Which is", transportations, "% of your income \n")
+# your rent is $XX.XX which is XX% of y is $", transportatioour income. (print)
 
 # your savings is $XX.XX which is XX% of your income. (print)
 
