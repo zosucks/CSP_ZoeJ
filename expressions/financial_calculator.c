@@ -29,7 +29,7 @@ scanf("%f", groceries);
 printf("What is your transportation?: \n");
 scanf("%f", transportation);
 //savings = income - rent - groceries - utilities - transportation
-savings = income-rent-utilities-groceries-transportation;
+savings = income - rent - utilities - groceries - transportation;
 
 
 float rents;
@@ -41,15 +41,15 @@ float saving;
 
 
 // calculate savings as 10% of income (income * .1) (a variable)
-saving = income*.1;
+saving = income * .1;
 // calculate percent income of rent (rent/income * 100) (variable)
-rents = (rent/income)*100;
+rents = (rent/income) * 100;
 // calculate percent income of utilities (utilities/income * 100) (variable)
-utilitie = (utilities/income)*100;
+utilitie = (utilities/income) * 100;
 // calculate percent income of groceries (groceries/income * 100) (variable)
-grocerie = (groceries/income)*100;
+grocerie = (groceries/income) * 100;
 // calculate percent income of transportation (transportation/income * 100) (variable)
-transportations = (transportation/income)*100;
+transportations = (transportation/income) * 100;
 
 
 printf("Your rent is %f, which is %f % of your income. \n", rent, rents);
@@ -59,5 +59,3 @@ printf("Your transportations is %f, which is %f % of your income. \n", transport
 printf("Your savings is %f, which is %f % of your income. \n", savings, saving);
     return 0;
 }
-
-
