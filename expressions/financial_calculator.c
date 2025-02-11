@@ -15,19 +15,19 @@ int main(void){
     printf("Hello user! This is a financial calculator for you and your money!\n");
 // ask what their monthly income is (variable an input)
 printf("What is your income?: \n");
-scanf("%f", income);
+scanf("%f", &income);
 // ask what their rent is (variable an input)
 printf("What is your rent?: \n");
-scanf("%f", rent);
+scanf("%f", &rent);
 // ask what their utilities cost is (variable an input)
 printf("What is your utilities?: \n");
-scanf("%f", utilities);
+scanf("%f", &utilities);
 // ask what their  grocories cost is (variable an input)
 printf("What is your groceries?: \n");
-scanf("%f", groceries);
+scanf("%f", &groceries);
 // ask what their transportation cost is (variable an input)
 printf("What is your transportation?: \n");
-scanf("%f", transportation);
+scanf("%f", &transportation);
 //savings = income - rent - groceries - utilities - transportation
 savings = income - rent - utilities - groceries - transportation;
 
@@ -52,10 +52,10 @@ grocerie = (groceries/income) * 100;
 transportations = (transportation/income) * 100;
 
 
-printf("Your rent is %f, which is %f % of your income. \n", rent, rents);
-printf("Your utilities is %f, which is %f % of your income. \n", utilities, utilitie);
-printf("Your groceries is %f, which is %f % of your income. \n", groceries, grocerie);
-printf("Your transportations is %f, which is %f % of your income. \n", transportation, transportations);
-printf("Your savings is %f, which is %f % of your income. \n", savings, saving);
+printf("Your rent is %.2f, which is %.2f %% of your income. \n", rent, rents);
+printf("Your utilities is %.2f, which is %.2f %% of your income. \n", utilities, utilitie);
+printf("Your groceries is %.2f, which is %.2f %% of your income. \n", groceries, grocerie);
+printf("Your transportations is %.2f, which is %.2f %% of your income. \n", transportation, transportations);
+printf("Your savings is %.2f, which is %.2f %% of your income. \n", savings, saving);
     return 0;
 }
