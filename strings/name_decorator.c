@@ -2,19 +2,24 @@
 
 
 #include <stdio.h>
-char name[55];
-char one = ("###");
-char three = ("###");
+    char name;
+
 
 int main(void){
-    printf("Hellow user this is a program to decorate your name\n");
+    printf("Hello user this is a program to decorate your name\n");
     printf("What is your name?: \n");
-    scanf("%d", name);
+    scanf("%s", name);
 
+    char one[] = (":):)");
+    char three[] = (":):)");
 
-strcat(one, name);
-strcat(one, three);
+   
+    strcat(one, name);
+    printf("%s", one);
+    strcat(one, three);
+    print("%s", three);
 
+    printf("%s", name);
 
     return 0;
 }
