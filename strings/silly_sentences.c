@@ -25,10 +25,10 @@ int main(void){
     scanf("%s", &state);
 
     printf("Please type in a solid number: \n");
-    scanf("%d", &num);
+    scanf("%f", &num);
 
     printf("Please type in another solid number: \n");
-    scanf("%d", &num1);
+    scanf("%f", &num1);
 
     printf("Please type another a ONE WORD color: \n");
     scanf("%s", &color1);
@@ -41,7 +41,7 @@ int main(void){
     // make sure to tell user to put in only one word.
 
     //print out the story with the variables inserted
-    printf("A %s spaceship landed in %s. Can you believe that %d aliens got off the ship! They had %d eyes and two %s mouths! They had %s heads and %s noses! \n", color, state, num, num1, color1, shape, shape1);
+    printf("A %s spaceship landed in %s. Can you believe that %.0f aliens got off the ship! They had %.0f eyes and two %s mouths! They had %s heads and %s noses! \n", color, state, num, num1, color1, shape, shape1);
     // all in one print statement!!
     
     return 0;
