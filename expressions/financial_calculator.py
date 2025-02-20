@@ -31,6 +31,7 @@ transportations = (transportation/income)*100
 spending = income-saving-rent-groceries-utilities-transportation
 spendings = (spending/income)*100
 
+
 # your rent is $XX.XX which is XX% of your income. (print)
 print("Your rent is $", rent, "Which is", rents, "% of your income.\n" )
 # your utilites is $XX.XX which is XX% of your income. (print)
