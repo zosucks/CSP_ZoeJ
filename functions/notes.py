@@ -1,12 +1,12 @@
 # Zoe jimenez, function notes PYTHON
 
 #functions hold actions to be reused
-number = int(input("Please tell me a number: \n"))
-def add(numOne, numTwo):
+#number = int(input("Please tell me a number: \n"))
+#def add(numOne, numTwo):
     #numOne = int(input("Please tell me a number: \n"))
     #numTwo = int(input("Please tell me another number: \n"))
 
-    return numOne + numTwo
+ #   return numOne + numTwo
     #print(numOne+numTwo)
 
 
