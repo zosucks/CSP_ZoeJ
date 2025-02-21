@@ -1,32 +1,17 @@
 # Zoe Jimenez, Hello World UPDATE PYTHON
 
-
-
-def info(type):
-    print(f"Hello {name}, welcome to programming.")
-    return info
-name = input("What is your name?: \n")
+def info():   
+    return "Hello " + input("What is your name?: \n") + "!"
     
-print(info(type))
-print(info(type))
-print(info(type))
-print(info(type))
-print(info(type))
+print(info())
+print(info())
+print(info())
+print(info())
+print(info())
 
 
-
-
-#def info():
-    #return input(f"Please give me a name:")
-
-#name = info()
-#print(f"Hello {name}")
-#name = info()
-#print(f"Hello {name}")
-#name = info()
-#print(f"Hello {name}")
-#name = info()
-#print(f"Hello {name}")
-#name = info()
-#print(f"Hello {name}")\
-
+#Hi, it's Vincent again... I got 2 lines
+'''
+def main(name): return "Hello " + name
+[print(main(input('What is your name?\n'))) for _ in range(5)]
+'''
