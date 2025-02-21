@@ -1,9 +1,10 @@
 # Zoe jimenez, UPDATE Financial calculator PYTHON
 def info(cost, income, type):
-    percent = (cost/income)*100
+
     print(f"Your {type} is {cost:.2f} Which is {percent}% of your income.\n" )
 
 def present(cost, income):
+    percent = (cost/income)*100
     
 
 # print statment that welcomes user and tells what this program does
@@ -30,3 +31,9 @@ info(groceries, income, "groceries")
 info(transportation, income, "transportation")
 info(savings, income, "savings")
 info(spending, income, "spending")
+
+present(rent, income)
+present(utilities, income)
+present(groceries, income)
+present(transportation, income)
+present(savings, income)

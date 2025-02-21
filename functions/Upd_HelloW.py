@@ -2,17 +2,31 @@
 
 
 
-def info():
-    return input(f"Please give me a name:")
+def info(type):
+    print(f"Hello {name}, welcome to programming.")
+    return info
+name = input("What is your name?: \n")
+    
+print(info(type))
+print(info(type))
+print(info(type))
+print(info(type))
+print(info(type))
 
-name = info()
-print(f"Hello {name}")
-name = info()
-print(f"Hello {name}")
-name = info()
-print(f"Hello {name}")
-name = info()
-print(f"Hello {name}")
-name = info()
-print(f"Hello {name}")
+
+
+
+#def info():
+    #return input(f"Please give me a name:")
+
+#name = info()
+#print(f"Hello {name}")
+#name = info()
+#print(f"Hello {name}")
+#name = info()
+#print(f"Hello {name}")
+#name = info()
+#print(f"Hello {name}")
+#name = info()
+#print(f"Hello {name}")\
 
