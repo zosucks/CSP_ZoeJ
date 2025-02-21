@@ -1,4 +1,4 @@
-// Zoe Jimenez, PUDATE
+// Zoe Jimenez, Hello World UPDATE C
 
 #include <stdio.h>
 void printer(){
