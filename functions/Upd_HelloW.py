@@ -1,13 +1,13 @@
 # Zoe Jimenez, Hello World UPDATE PYTHON
 
-def info():   
-    return "Hello " + input("What is your name?: \n") + "!"
+def info(name):   
+    return "Hello " + name + "!"
     
-print(info())
-print(info())
-print(info())
-print(info())
-print(info())
+print(info(input("What is your name?: \n")))
+print(info(input("What is your name?: \n")))
+print(info(input("What is your name?: \n")))
+print(info(input("What is your name?: \n")))
+print(info(input("What is your name?: \n")))
 
 
 #Hi, it's Vincent again... I got 2 lines
