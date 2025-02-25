@@ -59,21 +59,11 @@ elif not num <10: #Not changes to check if false
 
 #What does a nested conditional statement do?
 if num <10:
-    if num == 8:
+    if num ==8:
         print("This prints at 8")
-elif:
-    print("The number is less than 10")
+    else:
+        print("The number is less than 10")
+
 else:
     print("The number is bigger then 10")
-
-#How do you write an if statement in C?
-
-
-#How do you write else statements in C?
-
-
-#How do you write elif/ else if statements in C?
-
-
-#How do you write the 3 logical operators in C?
 
