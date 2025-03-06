@@ -1,6 +1,6 @@
 # Zoe Jimemez, My Family Loop PYTHON
 
-siblings = ["Ruben", "Matthew", "Leo", "Josephine", "Vincent"]
+familiars = ["Ruben", "Matthew", "Leo", "Josephine", "Vincent"]
 
-for sibling in siblings:
-    print("Hello!", sibling, ", Welcome to CSP!")
+for familiar in familiars:
+    print("Hello!", familiar, ", Welcome to CSP!")
