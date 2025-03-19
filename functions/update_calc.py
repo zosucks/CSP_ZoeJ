@@ -2,9 +2,10 @@
 
 print("Welcome User! This is a financial Calculator for your needs.")
 def user_inputs(type):
-    
     float(input(f"What is your {type}?: "))
- 
+    return float
+
+
 income = user_inputs("income")
 rent = user_inputs("rent")
 utilities = user_inputs("utilities")
@@ -27,22 +28,22 @@ transportation = user_inputs("transportion")
 #transportation = float(input("What is your transportation cost?\n"))
 
 def info(cost, type):
-    percent = (cost/income)*100
+    percent = (float/income)*100
     print(f"Your {type} is {cost:.2f} Which is {percent}% of your income.\n" )
+    return percent
 
 
 
-
-saving = income*.1
-savings = (saving/income)*100
-spending = income-saving-rent-groceries-utilities-transportation
-spendings = (spending/income)*100
+#saving = income*.1
+#savings = (saving/income)*100
+#spending = income-saving-rent-groceries-utilities-transportation
+#spendings = (spending/income)*100
 
 
 info(rent, "rent")
 info(utilities, "utlities")
 info(groceries, "groceries")
 info(transportation, "transportation")
-info(savings, "savings")
-info(spending, "spending")
+#info(savings, "savings")
+#info(spending, "spending")
 
