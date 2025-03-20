@@ -27,6 +27,26 @@ transportation = user_inputs("transportion")
 # ask what their transportation cost is (variable an input)
 #transportation = float(input("What is your transportation cost?\n"))
 
+def info(cost, income, type):
+    print(f"Your {type} is {cost:.2f} Which is {percent}% of your income.\n" )
+    percent = (cost/income)*100
+
+
+#saving = income *.1
+#savings = (saving/income)*100
+#spending = income-saving-rent-groceries-utilities-transportation
+#spendings = (spending/income)*100
+
+info(rent, income, "rent")
+info(utilities, income, "utlities")
+info(groceries, income, "groceries")
+info(transportation, income, "transportation")
+#info(savings, income, "savings")
+#info(spending, income, "spending")
+#info(spending, income, "spending")
+
+
+
 def info(cost, type):
     percent = (float/income)*100
     print(f"Your {type} is {cost:.2f} Which is {percent}% of your income.\n" )
@@ -46,4 +66,5 @@ info(groceries, "groceries")
 info(transportation, "transportation")
 #info(savings, "savings")
 #info(spending, "spending")
+
 
