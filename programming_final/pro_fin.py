@@ -10,10 +10,48 @@ print("[][][]        ")
 
 #Brahm: loop/ which word(in a list) to make the user guess
 import random
-random_words = random.choice["software", "iconic", "dirtbikes", "manager", "pepsi", "explode", "investagator", "exciting", "attitude", "computer", "cyber", "architect", "printer", "publication", "evaluation", "rhinoceros", "pharoah", "crocodile", "alligator", "pneumonoultramicroscopicsilicovolcanoconiosis"]
+words = ["software", "iconic", "dirtbike", "manager", "pepsi", "explode", "investiagator", "exciting8", "attitude", "computer", "cyber", "architect", "printer", "publication", "evaluation", "rhinoceros", "pharoah", "crocodile", "alligator", "pneumonoultramicroscopicsilicovolcanoconiosis", "bombaclat"]
+random_words = random.choice(words)
+for random_word in words:
+    if random_word == "software" or "dirtbike" or "exciting" or "attitude" or "computer" :
+        print("_ _ _ _ _ _ _ _")
+    elif random_word ==  "manager" or "explode" or "pharoah" or "printer":
+        print("_ _ _ _ _ _")
+    elif random_word == "iconic":
+        print("_ _ _ _ _ _ _")
+    elif random_word == "pepsi" or "cyber":
+        print("_ _ _ _ _")
+    elif random_word ==  "crocodile" or "alligator" or "architect" or "bombaclat":
+        print("_ _ _ _ _ _ _ _ _")
+    elif random_word == "evaluation" or "rhinocero":
+        print("_ _ _ _ _ _ _ _ _ _")
+    elif random_word == "publication":
+        print("_ _ _ _ _ _ _ _ _ _ _")
+    else:
+       print("_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _")
 
-for word in words:
-   print (random.random(word))
+
+if random_word == "software" or "dirtbike" or "exciting" or "attitude" or "computer" :
+        print("_ _ _ _ _ _ _ _")
+    elif random_word ==  "manager" or "explode" or "pharoah" or "printer":
+        print("_ _ _ _ _ _")
+    elif random_word == "iconic":
+        print("_ _ _ _ _ _ _")
+    elif random_word == "pepsi" or "cyber":
+        print("_ _ _ _ _")
+    elif random_word ==  "crocodile" or "alligator" or "architect" or "bombaclat":
+        print("_ _ _ _ _ _ _ _ _")
+    elif random_word == "evaluation" or "rhinocero":
+        print("_ _ _ _ _ _ _ _ _ _")
+    elif random_word == "publication":
+        print("_ _ _ _ _ _ _ _ _ _ _")
+    else:
+       print("_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _")
+
+
+
+#for word in word:
+#   print (random.random(word))
 
 
 #Kaleb: function that runs if they get the letter wrong (includes making the hangman if wrong)
