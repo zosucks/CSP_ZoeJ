@@ -1,68 +1,106 @@
 #PROGRAMMING FINAL PYTHON
-print("Welcome to hangman!")
-print("______________")
-print("|            |")
-print("|             ")
-print("|             ")
-print("|             ")
-print("[][][]        ")
-
-
-#Brahm: loop/ which word(in a list) to make the user guess
+#featuring Brahm, Gov, Kaleb, and Zoe
 import random
-words = ["software", "iconic", "dirtbike", "manager", "pepsi", "explode", "investiagator", "exciting8", "attitude", "computer", "cyber", "architect", "printer", "publication", "evaluation", "rhinoceros", "pharoah", "crocodile", "alligator", "pneumonoultramicroscopicsilicovolcanoconiosis", "bombaclat"]
-random_words = random.choice(words)
-for random_word in words:
-    if random_word == "software" or "dirtbike" or "exciting" or "attitude" or "computer" :
-        print("_ _ _ _ _ _ _ _")
-    elif random_word ==  "manager" or "explode" or "pharoah" or "printer":
-        print("_ _ _ _ _ _")
-    elif random_word == "iconic":
-        print("_ _ _ _ _ _ _")
-    elif random_word == "pepsi" or "cyber":
-        print("_ _ _ _ _")
-    elif random_word ==  "crocodile" or "alligator" or "architect" or "bombaclat":
-        print("_ _ _ _ _ _ _ _ _")
-    elif random_word == "evaluation" or "rhinocero":
-        print("_ _ _ _ _ _ _ _ _ _")
-    elif random_word == "publication":
-        print("_ _ _ _ _ _ _ _ _ _ _")
-    else:
-       print("_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _")
-
-
-if random_word == "software" or "dirtbike" or "exciting" or "attitude" or "computer" :
-        print("_ _ _ _ _ _ _ _")
-    elif random_word ==  "manager" or "explode" or "pharoah" or "printer":
-        print("_ _ _ _ _ _")
-    elif random_word == "iconic":
-        print("_ _ _ _ _ _ _")
-    elif random_word == "pepsi" or "cyber":
-        print("_ _ _ _ _")
-    elif random_word ==  "crocodile" or "alligator" or "architect" or "bombaclat":
-        print("_ _ _ _ _ _ _ _ _")
-    elif random_word == "evaluation" or "rhinocero":
-        print("_ _ _ _ _ _ _ _ _ _")
-    elif random_word == "publication":
-        print("_ _ _ _ _ _ _ _ _ _ _")
-    else:
-       print("_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _")
 
 
 
-#for word in word:
-#   print (random.random(word))
+#kaleb: conditional runs when the user fails or wins then repeats the code
+print("Welcome to hangman!")
+
+def play_hangman(word):
+   
+    attempts = 6  
+    guessed_letters = set()
+    hangman_states = [
+        """
+         -----
+         |   |
+         |
+         |
+         |
+         |
+        [][][]]""",
+        """
+         -----
+         |   |
+         |   O
+         |
+         |
+         |
+        [][][]]""",
+        """
+         -----
+         |   |
+         |   O
+         |   |
+         |
+         |
+        [][][]]""",
+        """
+         -----
+         |   |
+         |   O
+         |  /|
+         |
+         |
+        [][][]]""",
+        """
+         -----
+         |   |
+         |   O
+         |  /|\\
+         |
+         |
+        [][][]]""",
+        """
+         -----
+         |   |
+         |   O
+         |  /|\\
+         |  /
+         |
+        [][][]]""",
+        """
+         -----
+         |   |
+         |   O
+         |  /|\\
+         |  / \\
+         |
+        [][][]]"""
+    ]
+
+   #Brahm: loop/ which word(in a list) to make the user guess
+    while attempts > 0:
+        print(hangman_states[6 - attempts])
+        display_word = "".join([letter if letter in guessed_letters else "_" for letter in word])
+        print(f"Word: {display_word}")
+
+        # Check if the player has guessed the word
+        if display_word == word:
+            print("Congratulations! You guessed the word!")
+            return
+
+        # Ask for a guess
+        guess = input("Guess a letter: ").lower()
+
+        #Zoe: Conditional check for valid guess
+        if guess in guessed_letters:
+            print("You already guessed that letter? Please try again...")
+        elif guess in word:
+            print(f"Goodjob! '{guess}' is in this word.")
+            guessed_letters.add(guess)
+        else:
+            print(f"Nope! '{guess}' is not in this word.")
+            guessed_letters.add(guess)
+            attempts -= 1  
 
 
-#Kaleb: function that runs if they get the letter wrong (includes making the hangman if wrong)
-def wrd(wrong):
-    float(input(f"What is your {wrong}?\n"))
+    print(hangman_states[-1])
+    print(f"Game over! The word was '{word}'.")
 
-
-#Gov: the other function that runs when the user gets it correct (includes spelling the word at the bottom)
-def letter(right):
-    (input(f"What is your {right}?\n"))
-
-
-
-#Zoe: conditional runs when the user fails or wins then repeats the code
+# #Gov: the function that chooses the random word in a list
+if __name__ == "__main__":
+    words = ["software", "iconic", "dirtbike", "manager", "pepsi", "explode", "investiagator", "exciting", "attitude", "computer", "cyber", "architect", "printer", "publication", "evaluation", "rhinoceros", "pharoah", "crocodile", "alligator", "pneumonoultramicroscopicsilicovolcanoconiosis", "lebron"]
+    random_words = random.choice(words)
+    play_hangman(random_words)
