@@ -30,6 +30,7 @@ transportation = user_inputs("transportion")
 def info(cost, income, type):
     print(f"Your {type} is {cost:.2f} Which is {percent}% of your income.\n" )
     percent = (cost/income)*100
+    
 
 
 #saving = income *.1
