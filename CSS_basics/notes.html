@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS basics</title>
+        <!--This is where the css goes-->
+        <style>
+            *{
+                background-color: lightgoldenrodyellow;
+            
+            }
+            p{
+                color: blue;
+                text-align: center;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            #intro{
+                color: limegreen
+            }
+            .example{
+                color: red
+            }
+            #image-src{
+                font-size: 9px;
+                color: gray;
+                text-align: left;
+            }
+            img{
+                width: 30%;
+            }
+            #line{
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="intro">
+        <h1>CSS basic NOTES</h1>
+        <p>What does CSS stand for? Cascading style sheets</p>
+        <p> </p>
+    </div>
+    <div id="lists">
+        <p>Lists are just like a <span id="line">list</span> you would make in real life. They require nesting li tags inside of other tags</p>
+
+        <ol class="example"><!---Ordered list-->
+            <li>this is item one</li>
+            <li>item 2!</li>
+            <li>another item</li>
+            <li>and another!</li>
+        </ol>
+
+        <ul >
+            <li>way of kings</li>
+            <li>skyward</li>
+            <li>Mistborn</li>
+        </ul>
+
+        <dl><!--Detailed description list-->
+            <dt><!--detail title-->
+                Aang
+            </dt>
+            <dd>Last air bender. <a href="https://en.wikipedia.org/wiki/Avatar:_The_Last_Airbender" target="_blank">Avatar</a>. kinda silly.</dd>
+            <img src="https://upload.wikimedia.org/wikipedia/en/f/fb/Katara.png" alt="katara" >
+            <dt id="image-src">image from wikipedia</dt>
+            <dt>Katara</dt>
+            <dd>Water bender, believes aangs will save the world.</dd>
+        </dl>
+        <a href="https://www.w3schools.com/Html/html_links.asp" target="_blank">To learn about links!</a>
+    </div>
+    <div id="images"><!--open the image in a new tab-->
+        <img src="https://miro.medium.com/v2/resize:fit:1200/0*3xTjr7rYOjGYjKqi.jpg"  alt="Aang batering" >
+        <p id="image-src">Image from Medium</p>
+
+    </div>
+    </body>
