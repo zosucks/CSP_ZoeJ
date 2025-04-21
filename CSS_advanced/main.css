@@ -28,3 +28,8 @@ img{
     height: 150px;
 
 }
+#no{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
