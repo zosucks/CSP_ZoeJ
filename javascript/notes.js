@@ -13,7 +13,8 @@ function change(){
 }
 
 function hello(){
-    document.getElementById("title").innerHTML = "HELLO WORLDDD!!"
+    let name = window.prompt("What is your name?", "girl")
+    document.getElementById("title").innerHTML = "Hello " + name + "!"
 }
 
 function hover(){
@@ -24,6 +25,10 @@ function leave(){
     document.getElementById("image").src = "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg"
 }
 
-function hidden(){
-    document.getElementById("meme").style.display = "block"
+function show(){
+    document.getElementById("lost").style.display = "block"
+}
+
+function pop(){
+    window.alert("really dont click that..")
 }
