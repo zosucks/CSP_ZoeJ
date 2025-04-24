@@ -32,3 +32,13 @@ function show(){
 function pop(){
     window.alert("really dont click that..")
 }
+
+function view(){
+    if(document.getElementById("more").style.display === "block"){
+            document.getElementById("more").style.display = "none"
+            document.getElementById("show").innerHTML = "Show more"
+    }else{
+        document.getElementById("more").style.display = "block"
+        document.getElementById("show").innerHTML = "Show less"
+    }
+}
