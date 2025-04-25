@@ -1,3 +1,3 @@
 function show(){
-    document.getElementById("gone").style.display = "block"
+    document.getElementById("lost").style.display = "block"
 }
