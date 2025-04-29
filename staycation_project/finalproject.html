@@ -2,29 +2,44 @@
 <html>
     <head>
         <meta charset="UTF-8"> 
-        <title>Moab, Utah</title>
-        <!--rememeber to call js flie-->
-        <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
-        <style>
-            @import url('https://fonts.cdnfonts.com/css/minecraft-4');
-            body{
-
-                background-color: #ffede1;
-                color: #f1c543;
-            }
-            maintitle{
-                text-align: center;
-            }
-            picsrc{
-                font-size: small;
-            }
-        </style>
+            <title>Moab, Utah</title>
+            <script src="finalproject.js"></script>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
+            <style>
+            
+                body{
+                    font-family: "Gabriela", serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    background-color: #ffede1;
+                    color: #bb6b02;
+                }
+                #maintitle{
+                    text-align: center;
+                }
+                #picsrc{
+                    font-size: small;
+                }
+                #pic{ 
+                    height: 500px;
+                    width: auto;
+                }
+                #pics{ 
+                    height: 500px;
+                    width: auto;
+                }
+                #more{
+                display: none;
+                }
+            </style>
     </head>
     <body>
         <div id="everything">
             <h1 id="maintitle">Welcome to Moab, Utah!</h1>
 
-            <div id="toprow"></div><br><img id="pics" src="https://www.azcentral.com/gcdn/-mm-/006b1dce822e827ec000feb8db444e42acf95093/c=0-197-3871-2384/local/-/media/2017/03/08/Phoenix/Phoenix/636245929998814502-GettyImages-534480563.jpg" alt="Grand-National Arch">
+            <div id="toprow"></div><br><img id="pic" src="https://www.azcentral.com/gcdn/-mm-/006b1dce822e827ec000feb8db444e42acf95093/c=0-197-3871-2384/local/-/media/2017/03/08/Phoenix/Phoenix/636245929998814502-GettyImages-534480563.jpg" alt="Grand-National Arch">
                 <p id="picsrc">Image from Azcentral</p>
 
                 <h2 id="paratitles">What's Moab?</h2>
@@ -40,12 +55,12 @@
                     <li>yay</li>
                     <li>yay</li>
                 </ol>
-                <img id="pics" src="" alt=""><!--perhaps make this image the one that changes when mouse goes over-->
-                <p id="picsrc">Image from ....</p>
+                <img id="pics" onmouseover="change()" src="https://kateoutdoors.com/wp-content/uploads/2024/08/best-hikes-moab-professor-creek-mary-jane-canyon.jpg" alt="Water-fall"><!--perhaps make this image the one that changes when mouse goes over-->
+                <p id="picsrc">First image from Kateoutdoors</p>
             </div>
 
             <div id="lastrow">
-                <img id="pics" src="https://images.canusa.de/img/regionen/usa/suedwesten/utah/moab/moab-city-scape-1.cr1998x1999-402x0.jpg" alt="Moab, city">
+                <img id="pic" src="https://images.canusa.de/img/regionen/usa/suedwesten/utah/moab/moab-city-scape-1.cr1998x1999-402x0.jpg" alt="Moab, city">
                 <p id="picsrc">Image from Canusa</p>
 
                 <h2 id="paratitles">Describing Moab</h2>
@@ -53,8 +68,15 @@
             </div>
         </div>
 
-        <div id="button">
-            <!--add the button code here-->
+
+        <button id="Show" onclick="view()">Show more</button>
+        <div id="More">
+            <p>drfiudrskjgfnalerwiilgiuerkjerzabgrkjrkjerzagr</p>
+            <ul>
+                <li>wertyuiorfghjfhj</li>
+                <li>sdfghjkertyu</li>            
+                <li>sglkjrlkjrgvdjhrsuhfrv</li>
+            </ul>
         </div>
     </body>
 </html>
