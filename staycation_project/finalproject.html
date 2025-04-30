@@ -30,16 +30,22 @@
                     height: 500px;
                     width: auto;
                 }
-                #more{
-                display: none;
+                #More{
+                    display: none;
                 }
+                #everything{
+                    display: grid;
+                    grid-template-columns: 100%;
+                    grid-template-rows:  100px 1fr 1fr 1fr 1fr 100px;
+                }
+                
             </style>
     </head>
     <body>
         <div id="everything">
             <h1 id="maintitle">Welcome to Moab, Utah!</h1>
 
-            <div id="toprow"></div><br><img id="pic" src="https://www.azcentral.com/gcdn/-mm-/006b1dce822e827ec000feb8db444e42acf95093/c=0-197-3871-2384/local/-/media/2017/03/08/Phoenix/Phoenix/636245929998814502-GettyImages-534480563.jpg" alt="Grand-National Arch">
+            <div id="toprow"><br><img id="pic" src="https://www.azcentral.com/gcdn/-mm-/006b1dce822e827ec000feb8db444e42acf95093/c=0-197-3871-2384/local/-/media/2017/03/08/Phoenix/Phoenix/636245929998814502-GettyImages-534480563.jpg" alt="Grand-National Arch">
                 <p id="picsrc">Image from Azcentral</p>
 
                 <h2 id="paratitles">What's Moab?</h2>
@@ -59,24 +65,25 @@
                 <p id="picsrc">First image from Kateoutdoors</p>
             </div>
 
-            <div id="lastrow">
+            <div id="secmiddlerow">
                 <img id="pic" src="https://images.canusa.de/img/regionen/usa/suedwesten/utah/moab/moab-city-scape-1.cr1998x1999-402x0.jpg" alt="Moab, city">
                 <p id="picsrc">Image from Canusa</p>
 
                 <h2 id="paratitles">Describing Moab</h2>
                 <p>explain the environment of this place</p>
             </div>
-        </div>
+        
 
 
-        <button id="Show" onclick="view()">Show more</button>
-        <div id="More">
-            <p>drfiudrskjgfnalerwiilgiuerkjerzabgrkjrkjerzagr</p>
-            <ul>
-                <li>wertyuiorfghjfhj</li>
-                <li>sdfghjkertyu</li>            
-                <li>sglkjrlkjrgvdjhrsuhfrv</li>
-            </ul>
+            <div id="lastrow"><button id="Show" onclick="view()">Show more</button>
+                <div id="More">
+                    <p>drfiudrskjgfnalerwiilgiuerkjerzabgrkjrkjerzagr</p>
+                    <ul>
+                        <li>wertyuiorfghjfhj</li>
+                        <li>sdfghjkertyu</li>            
+                        <li>sglkjrlkjrgvdjhrsuhfrv</li>
+                    </ul>
+            </div>
         </div>
     </body>
 </html>
