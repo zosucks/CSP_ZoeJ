@@ -35,47 +35,73 @@
                 }
                 #everything{
                     display: grid;
-                    grid-template-columns: 100%;
-                    grid-template-rows:  100px 1fr 1fr 1fr 1fr 100px;
+                    grid-template-rows: 1fr 1fr 1fr 1fr;
                 }
-                
+                #top_right{
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    
+                }
+                p{
+                padding: 25px;
+                margin: 15px;
+                }
             </style>
     </head>
     <body>
-        <div id="everything">
             <h1 id="maintitle">Welcome to Moab, Utah!</h1>
+        <div id="everything">
 
-            <div id="toprow"><br><img id="pic" src="https://www.azcentral.com/gcdn/-mm-/006b1dce822e827ec000feb8db444e42acf95093/c=0-197-3871-2384/local/-/media/2017/03/08/Phoenix/Phoenix/636245929998814502-GettyImages-534480563.jpg" alt="Grand-National Arch">
-                <p id="picsrc">Image from Azcentral</p>
+            <div id="toprow">
+                <div id="top_left">
+                    <br><img id="pic" src="https://www.azcentral.com/gcdn/-mm-/006b1dce822e827ec000feb8db444e42acf95093/c=0-197-3871-2384/local/-/media/2017/03/08/Phoenix/Phoenix/636245929998814502-GettyImages-534480563.jpg" alt="Grand-National Arch">
+                    <p id="picsrc">Image from Azcentral</p>
+                </div>
 
-                <h2 id="paratitles">What's Moab?</h2>
-                <p>A paragraph (3 sentence minimum) describing the place and why it is a good one to visit</p>
+                <div id="top_right">
+                    <h2 id="paratitles">What's Moab?</h2>
+                    <p>Moab Utah is a semi-small town that is located on the east side of Utah, which is in way of Grand Junction in Colorado. This friendly town is full of hospitable people that are open to your stay! This town looks like and why it is a good one to visit</p>
+                </div>
             </div>
 
             <div id="middlerow">
-                <p>Why should it be your next visit!</p>
-                <ol>
-                    <li>yay</li>
-                    <li>yay</li>
-                    <li>yay</li>
-                    <li>yay</li>
-                    <li>yay</li>
-                </ol>
-                <img id="pics" onmouseover="change()" src="https://kateoutdoors.com/wp-content/uploads/2024/08/best-hikes-moab-professor-creek-mary-jane-canyon.jpg" alt="Water-fall"><!--perhaps make this image the one that changes when mouse goes over-->
-                <p id="picsrc">First image from Kateoutdoors</p>
+                
+                <div id="middle_left">
+                    <p>Why should it be your next visit!</p>
+                    <ol>
+                        <li>yay</li>
+                        <li>yay</li>
+                        <li>yay</li>
+                        <li>yay</li>
+                        <li>yay</li>
+                    </ol>
+                </div>
+
+
+                <div id="middle_right">
+                    <img id="pics" onmouseover="change()" src="https://kateoutdoors.com/wp-content/uploads/2024/08/best-hikes-moab-professor-creek-mary-jane-canyon.jpg" alt="Water-fall"><!--perhaps make this image the one that changes when mouse goes over-->
+                    <p id="picsrc">First image from Kateoutdoors</p>
+                </div>
+
             </div>
 
             <div id="secmiddlerow">
-                <img id="pic" src="https://images.canusa.de/img/regionen/usa/suedwesten/utah/moab/moab-city-scape-1.cr1998x1999-402x0.jpg" alt="Moab, city">
-                <p id="picsrc">Image from Canusa</p>
 
-                <h2 id="paratitles">Describing Moab</h2>
-                <p>explain the environment of this place</p>
+                <div id="secmid_left">
+                    <img id="pic" src="https://images.canusa.de/img/regionen/usa/suedwesten/utah/moab/moab-city-scape-1.cr1998x1999-402x0.jpg" alt="Moab, city">
+                    <p id="picsrc">Image from Canusa</p>
+                </div>
+
+                <div id="secmid_right">
+                    <h2 id="paratitles">Describing Moab</h2>
+                    <p>explain the environment of this place</p>
+                </div>
             </div>
         
 
 
-            <div id="lastrow"><button id="Show" onclick="view()">Show more</button>
+            <div id="lastrow">
+                <button id="Show" onclick="view()">Show more</button>
                 <div id="More">
                     <p>drfiudrskjgfnalerwiilgiuerkjerzabgrkjrkjerzagr</p>
                     <ul>
@@ -83,6 +109,7 @@
                         <li>sdfghjkertyu</li>            
                         <li>sglkjrlkjrgvdjhrsuhfrv</li>
                     </ul>
+                </div>   
             </div>
         </div>
     </body>
