@@ -25,10 +25,17 @@
                 #pic{ 
                     height: 500px;
                     width: auto;
+                    border: 7px solid rgb(129, 80, 6);
+                }
+                #pictures{
+                    height: 350px;
+                    width: auto;
+                    border: 7px solid rgb(129, 80, 6);
                 }
                 #pics{ 
                     height: 500px;
                     width: auto;
+                    border: 7px solid rgb(129, 80, 6);
                 }
                 #More{
                     display: none;
@@ -37,14 +44,37 @@
                     display: grid;
                     grid-template-rows: 1fr 1fr 1fr 1fr;
                 }
+                #toprow{
+                    display: flex;
+                    flex-direction: row;
+                    padding-left: 250px;
+                }
                 #top_right{
-                    display: grid;
-                    grid-template-columns: 50% 50%;
-                    
+                    padding-left: 50px;
+                    padding-right: 150px;
+                }
+                #middlerow{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    padding-right: 250px;
+                }
+                #middle_left{
+                    font-weight: bold;
+                    padding-right: 50px;
+                }
+                #secmiddlerow{
+                    display: flex;
+                    flex-direction: row;
+                    padding-left: 250px;
+                }
+                #secmid_right{
+                    padding-left: 50px;
+                    padding-right: 180px;
                 }
                 p{
-                padding: 25px;
-                margin: 15px;
+                    padding: 25px;
+                    margin: 15px;
                 }
             </style>
     </head>
@@ -54,7 +84,7 @@
 
             <div id="toprow">
                 <div id="top_left">
-                    <br><img id="pic" src="https://www.azcentral.com/gcdn/-mm-/006b1dce822e827ec000feb8db444e42acf95093/c=0-197-3871-2384/local/-/media/2017/03/08/Phoenix/Phoenix/636245929998814502-GettyImages-534480563.jpg" alt="Grand-National Arch">
+                    <br><img id="pictures" src="https://www.azcentral.com/gcdn/-mm-/006b1dce822e827ec000feb8db444e42acf95093/c=0-197-3871-2384/local/-/media/2017/03/08/Phoenix/Phoenix/636245929998814502-GettyImages-534480563.jpg" alt="Grand-National Arch">
                     <p id="picsrc">Image from Azcentral</p>
                 </div>
 
@@ -69,17 +99,17 @@
                 <div id="middle_left">
                     <p>Why should it be your next visit!</p>
                     <ol>
-                        <li>yay</li>
-                        <li>yay</li>
-                        <li>yay</li>
-                        <li>yay</li>
-                        <li>yay</li>
+                        <li>Same annual weather all year!</li>
+                        <li>These places ex the Arches, are really pretty</li>
+                        <li>People are really friendly to each other</li>
+                        <li>Try new foods</li>
+                        <li>A quiet, slow town if thats your type of thing!</li>
                     </ol>
                 </div>
 
 
                 <div id="middle_right">
-                    <img id="pics" onmouseover="change()" src="https://kateoutdoors.com/wp-content/uploads/2024/08/best-hikes-moab-professor-creek-mary-jane-canyon.jpg" alt="Water-fall"><!--perhaps make this image the one that changes when mouse goes over-->
+                    <img id="pics" onmouseover="change()" src="https://kateoutdoors.com/wp-content/uploads/2024/08/best-hikes-moab-professor-creek-mary-jane-canyon.jpg" alt="Water-fall">
                     <p id="picsrc">First image from Kateoutdoors</p>
                 </div>
 
@@ -94,7 +124,7 @@
 
                 <div id="secmid_right">
                     <h2 id="paratitles">Describing Moab</h2>
-                    <p>explain the environment of this place</p>
+                    <p>Moab is so beautiful as youre surrounded with the red colored rocks. Because of this it attracts many tourists as everyone loves see nature at its peak here in Utah. This place offers many activites to do like rock climbing, hiking, and mountain biking. Weather in Moab does stay very average but its averages are pretty high which calls for a lot of sun protection. Although this place attracts all kinds of people near by its population does stay pretty small. Moab is amzing for a people that love views along with a hike. Moab will wait for you! </p>
                 </div>
             </div>
         
@@ -103,12 +133,14 @@
             <div id="lastrow">
                 <button id="Show" onclick="view()">Show more</button>
                 <div id="More">
-                    <p>drfiudrskjgfnalerwiilgiuerkjerzabgrkjrkjerzagr</p>
+                    <p>AHA! you found me (it was probaly really easy)</p>
+                    <br><p>Theres so many another things to do in Utah another an just Moab!</p>
                     <ul>
-                        <li>wertyuiorfghjfhj</li>
-                        <li>sdfghjkertyu</li>            
-                        <li>sglkjrlkjrgvdjhrsuhfrv</li>
+                        <li>Go skiing</li>
+                        <li>Give Lagoon a quick trip</li>            
+                        <li>Visit Zion's National Park</li>
                     </ul>
+                    <p>Goodluck with your stay-cation in Utah!</p>
                 </div>   
             </div>
         </div>
